@@ -1,4 +1,3 @@
-!pip install opencv-python-headless
 import cv2
 import numpy as np
 from tensorflow.keras.applications import VGG16
@@ -7,15 +6,11 @@ from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predict
 # Load pre-trained VGG16 model
 model = VGG16(weights='imagenet')
 
-# Upload an image file in Google Colab
-from google.colab import files
-uploaded = files.upload()
+# Replace with the path to your image
+image_path = 'path/to/your/image.jpg'
 
-# Get the file name of the uploaded image
-image_filename = list(uploaded.keys())[0]
-
-# Load and preprocess the uploaded image for inference
-image = cv2.imread(image_filename)
+# Load and preprocess the image for inference
+image = cv2.imread(image_path)
 resized_image = cv2.resize(image, (224, 224))
 preprocessed_image = preprocess_input(np.expand_dims(resized_image, axis=0))
 
