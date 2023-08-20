@@ -17,6 +17,7 @@ You can install it using:
 
    ```bash
    pip install opencv-python-headless
+   ```
 
 1. Clone the repository:
    ```bash
