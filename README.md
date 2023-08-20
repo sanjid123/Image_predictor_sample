@@ -12,6 +12,12 @@ The script uses a pre-trained VGG16 model to classify images based on the ImageN
 
 To use this script, follow these steps:
 
+## Make sure you have OpenCV installed in your PyCharm environment. 
+You can install it using:
+
+   ```bash
+   pip install opencv-python-headless
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/Image_predictor_sample.git
